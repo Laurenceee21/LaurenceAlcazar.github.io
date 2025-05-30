@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laurence Alcazar's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400&display=sheet" rel="stylesheet">
+  </head>
+  <body>
+    <canvas id="bgCanvas"></canvas>
+    <div id="rocketship" class="top">
+      <img src="./assets/rocketship.gif" alt="Rocketship navigation" />
+    </div>
+    <nav id="desktop-nav">
+      <div class="logo">Laurence Alcazar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#personal-info">Personal Info</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#social-media">Social Media</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Laurence Alcazar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about-me" onclick="toggleMenu()">About Me</a></li>
+          <li><a href="#personal-info" onclick="toggleMenu()">Personal Info</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+          <li><a href="#social-media" onclick="toggleMenu()">Social Media</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="home">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Laurence Alcazar profile picture" class="profile-pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title" data-text="Laurence Alcazar">Laurence Alcazar</h1>
+        <p class="section__text__p2">Web & Android Developer</p>
+        <p class="section__text__p3">BSIT 3.2A</p>
+      </div>
+    </section>
+    <section id="about-me">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="details-container">
+            <p>I'm a Web and Android Developer who loves building apps and websites that are easy to use. I enjoy mixing design and coding to create projects like Qoustyler and Memoplay. As a BSIT student, I'm always learning new skills to improve my work. I like solving problems and making things that people find helpful. My goal is to create tech that makes a difference and keeps users happy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="personal-info">
+      <p class="section__text__p1">Get to Know Me</p>
+      <h1 class="title">Personal Information</h1>
+      <div class="section-container">
+        <div class="details-container info-container">
+          <ul class="info-list">
+            <li class="info-item"><strong>Name:</strong> <span>Laurence Alcazar</span></li>
+            <li class="info-item"><strong>Birthdate:</strong> <span>June 14, 2004</span></li>
+            <li class="info-item"><strong>Email:</strong> <span><a href="mailto:alcazar21laurence@gmail.com">alcazar21laurence@gmail.com</a></span></li>
+            <li class="info-item"><strong>Phone:</strong> <span>09299144249</span></li>
+            <li class="info-item"><strong>Address:</strong> <span>Matala, Ibaan, Batangas</span></li>
+          </ul>
+        </div>
+        <div class="music-container">
+          <h2 class="music-title">Favorite Music</h2>
+          <div class="music-tracks">
+            <div class="music-track">
+              <img src="./assets/album-art-1.png" alt="Track 1 album art" class="album-art" />
+              <p>Multo</p>
+              <button class="play-btn" data-track="track1" aria-label="Play or pause Track 1">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="music-track">
+              <img src="./assets/album-art-2.png" alt="Track 2 album art" class="album-art" />
+              <p>Patiwakal</p>
+              <button class="play-btn" data-track="track2" aria-label="Play or pause Track 2">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="music-track">
+              <img src="./assets/album-art-3.png" alt="Track 3 album art" class="album-art" />
+              <p>You'll Be Safe Here</p>
+              <button class="play-btn" data-track="track3" aria-label="Play or pause Track 3">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="music-track">
+              <img src="./assets/album-art-4.png" alt="Track 4 album art" class="album-art" />
+              <p>Glimpse of Us</p>
+              <button class="play-btn" data-track="track4" aria-label="Play or pause Track 4">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <audio id="track1" src="./assets/track1.mp3"></audio>
+      <audio id="track2" src="./assets/track2.mp3"></audio>
+      <audio id="track3" src="./assets/track3.mp3"></audio>
+      <audio id="track4" src="./assets/track4.mp3"></audio>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Gaming</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Programming</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Designing</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Web Development</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Mobile Development</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">My Background</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Capstone Project</h3>
+                  <p>Developed Qoustyler</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Web Development</h3>
+                  <p>Built responsive websites</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Mobile App Development</h3>
+                  <p>Created Memoplay</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Memoplay</h2>
+            <p>Mobile app with note-taking, task completion, and exciting mini-games.</p>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Qoustyler</h2>
+            <p>Mobile-based Salon Management System with Augmented Reality for Qourte Salon.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="achievements">
+      <p class="section__text__p1">My Milestones</p>
+      <h1 class="title">Achievements</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Intrams Mobile Legends Champions</h2>
+            <div class="article-container">
+              <img src="./assets/achievement-1.png" alt="Intrams Mobile Legends" class="project-img" />
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">ICE League Mobile Legends Champions</h2>
+            <div class="article-container">
+              <img src="./assets/achievement-2.png" alt="ICE League Mobile Legends" class="project-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="social-media">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Social Media</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fab fa-facebook-f icon"></i>
+          <p><a href="https://www.facebook.com/laurence.alcazar.21">Facebook</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fab fa-instagram icon"></i>
+          <p><a href="https://www.instagram.com/grz_zis/">Instagram</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fab fa-youtube icon"></i>
+          <p><a href="https://www.youtube.com/@l_alcazar1705">YouTube</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fab fa-github icon"></i>
+          <p><a href="https://github.com/Laurenceee21">Github</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="mini-game">
+      <p class="section__text__p1">Try My Game</p>
+      <h1 class="title">Catch the Star</h1>
+      <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <p id="score">Score: 0</p>
+        <p id="gameOver" style="display: none;">Game Over! Final Score: <span id="finalScore">0</span></p>
+        <button id="startGame" class="btn btn-color-2" aria-label="Start Catch the Star game">Start Game</button>
+      </div>
+    </section>
+    <footer id="footer">
+      <p>Copyright © <span id="copyright-year"></span> Laurence Alcazar. All Rights Reserved.</p>
+      <div id="moonview" class="moonview"></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

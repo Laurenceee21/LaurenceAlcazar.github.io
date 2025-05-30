@@ -1,0 +1,157 @@
+@media screen and (max-width: 1400px) {
+  #home {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #about-me, #skills, #experience, #projects, #achievements, .experience-details-container {
+    margin-top: 2rem;
+  }
+  #home, .section-container {
+    display: block;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 20vw;
+    height: 20vw;
+    margin: 0 auto 2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  #personal-info .section-container,
+  #personal-info .about-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #personal-info .info-container {
+    width: 100%;
+  }
+  #personal-info .info-item span {
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  #personal-info .music-tracks {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
+  #personal-info .music-track {
+    flex-direction: row;
+    width: 100%;
+    max-width: 320px;
+    min-width: unset;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+  }
+  #personal-info .music-track .album-art {
+    margin: 0 0.75rem 0 0;
+  }
+  #personal-info .music-track p {
+    flex: 1;
+    text-align: left;
+    margin: 0;
+    white-space: normal;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #home {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 0.9rem;
+  }
+  .contact-info-container {
+    margin: 0.5rem;
+  }
+  .contact-info-container p, .nav-links li a {
+    font-size: 0.8rem;
+  }
+  .experience-sub-title {
+    font-size: 1.1rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .section__pic-container {
+    width: 40vw;
+    height: 40vw;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  #gameCanvas {
+    width: 100%;
+    height: 50vw;
+  }
+  #personal-info .info-item, #personal-info .music-track p {
+    font-size: 0.9rem;
+  }
+  #personal-info .info-item strong {
+    min-width: 80px;
+  }
+  #personal-info .info-item span {
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  #personal-info .album-art {
+    width: 40px;
+    height: 40px;
+  }
+  #personal-info .play-btn {
+    font-size: 0.9rem;
+  }
+  #rocketship {
+    width: 90px;
+    height: 90px;
+  }
+  #rocketship .rocket-fire {
+    width: 36px;
+    height: 18px;
+    bottom: -18px;
+  }
+  nav {
+    height: 5vh;
+  }
+  .hamburger-icon {
+    height: 12px;
+    width: 18px;
+  }
+  .menu-links {
+    width: 100px;
+  }
+  .menu-links a {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+  .menu-links.open {
+    max-height: 200px;
+  }
+}
